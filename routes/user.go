@@ -5,8 +5,7 @@ import (
 	"github.com/gofiber/fiber/v2"
 )
 
-func SetupRoutes(app *fiber.App) {
-	// User routes
+func UserRoutes(app *fiber.App) {
 	user := app.Group("/user")
 	user.Get("/", controller.GetUsers)
 }
