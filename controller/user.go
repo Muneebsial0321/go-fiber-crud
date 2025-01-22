@@ -1,11 +1,11 @@
-package controller
+package controller;
 
 import (
 	"go-fiber-curd/models"
 	"github.com/gofiber/fiber/v2"
 )
 
-func GetUsers(c *fiber.Ctx) error {
+func User_GetAll(c *fiber.Ctx) error {
 	users := models.User{ID: 1, Name: "muneeb", Email: "email"}
 	// if err != nil {
 	// 	return c.Status(500).JSON(fiber.Map{"error": err.Error()})

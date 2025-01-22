@@ -7,5 +7,5 @@ import (
 
 func UserRoutes(app *fiber.App) {
 	user := app.Group("/user")
-	user.Get("/", controller.GetUsers)
+	user.Get("/", controller.User_GetAll)
 }
